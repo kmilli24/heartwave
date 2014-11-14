@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_reconnect"
+          android:title="@string/reconnect"
+          android:orderInCategory="100"/>
+    <item android:id="@+id/menu_scan"
+        android:title="@string/scan_devices"
+        android:orderInCategory="100"/>
+    <item android:id="@+id/menu_disconnect"
+        android:title="@string/disconnect"
+        android:orderInCategory="100"/>
+    <item android:id="@+id/menu_show_instructions"
+        android:title="@string/menu_show_instructions"
+        android:orderInCategory="100"/>
+    <item android:id="@+id/menu_hide_instructions"
+        android:title="@string/menu_hide_instructions"
+        android:orderInCategory="100"/>
+    <item android:id="@+id/menu_help"
+          android:title="@string/menu_help"
+          android:orderInCategory="100"/>
+</menu>

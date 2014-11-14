@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">HeartWave</string>
+
+    <string name="exit">Exit application</string>
+
+    <string name="unknown_device">Unknown device</string>
+
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+
+    <string name="bpm">bpm</string>
+    <string name="inhale">Inhale</string>
+    <string name="exhale">Exhale</string>
+    <string name="heart_rate">Heart Rate</string>
+
+    <string name="unable_init_ble">Unable to init BLE</string>
+    <string name="ble_not_supported">BLE not supported</string>
+    <string name="ble_required">This device doesn\'t support BLE.</string>
+
+    <string name="no_heart_rate">--</string>
+
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_recording">Recording&#8230;</string>
+    <string name="status_connecting">Connecting&#8230;</string>
+    <string name="status_connected">Connected</string>
+
+    <string name="instructions_disconnected">Not connected to a heart rate strap. Make sure bluetooth is enabled and press the menu "Scan devices".</string>
+    <string name="instructions_connecting">Connecting to your heart rate monitor. Press the menu disconnect to cancel.</string>
+    <string name="instructions_connected">Analysing your heart rate variability. Inhale when the heart rate goes up and exhale when it goes down. This will increase your coherence score.</string>
+
+    <string name="ok">OK</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="no_value">--</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="hrv">HRV</string>
+    <string name="coherence">Coherence</string>
+    <string name="menu_show_instructions">Show instructions</string>
+    <string name="menu_hide_instructions">Hide instructions</string>
+    <string name="scan_devices">Scan devices</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="searching">Searching&#8230;</string>
+    <string name="devices_available">Devices available:</string>
+    <string name="low">Low</string>
+    <string name="mediumLow">Medium Low</string>
+    <string name="mediumHigh">Medium High</string>
+    <string name="high">High</string>
+    <string name="veryLow">Very Low</string>
+    <string name="verHigh">Very High</string>
+    <string name="no_rr_intervals">No RR intervals received. Does your hear rate monitor support RR intervals? If it does, moisture the heart rate monitor and place it correctly.</string>
+    <string name="connecting_timeout">Connecting timeout</string>
+    <string name="save_recording">Save recording</string>
+    <string name="menu_light_theme">Light Theme</string>
+    <string name="menu_dark_theme">Dark Theme</string>
+    <string name="reconnect">Reconnect</string>
+    <string name="unstable_connection">Unstable connection. Moisture the heart rate monitor and place it correctly.</string>
+    <string name="message">Message</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="coh">COH</string>
+    <string name="hr">HR</string>
+    <string name="quit_question">Are you sure you want to quit the application?</string>
+    <string name="quit_message">You are connected to a heart rate monitor.
+
+If you quit the application the current recording will be saved and you\'ll be disconnected.</string>
+    <string name="connection_lost">Connection lost</string>
+    <string name="menu_help">Help</string>
+    <string name="Help">Help</string>
+    <string name="Close">Close</string>
+
+    <color name="transparent">#00000000</color>
+    <color name="sections_selected_light">#DADADA</color>
+    <color name="sections_selected_dark">#717171</color>
+
+    <color name="gray">#B7B7B7</color>
+    <color name="red">#cf3d42</color>
+    <color name="orange">#dc7e2f</color>
+    <color name="yellow">#d3bd43</color>
+    <color name="green_light">#00f892</color>
+    <color name="green">#2BC196</color>
+    <color name="blue_light">#66ddf4</color>
+    <color name="blue">#50aef0</color>
+</resources>

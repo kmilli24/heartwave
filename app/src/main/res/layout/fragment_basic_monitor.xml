@@ -1,0 +1,183 @@
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout">
+
+            <RelativeLayout
+                android:id="@+id/wheel"
+                android:layout_width="355dp"
+                android:layout_height="350dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/wheel">
+
+                <ImageView
+                    android:id="@+id/glassImage"
+                    android:layout_width="317dp"
+                    android:layout_height="317dp"
+                    android:src="@drawable/glass_gray"
+                    android:layout_centerInParent="true"
+                    />
+
+                <com.agustinprats.myhrv.view.ProgressWheel
+                    android:id="@+id/progressWheel"
+                    android:layout_width="352dp"
+                    android:layout_height="352dp"
+                    android:layout_centerInParent="true"
+                    ProgressWheel:text=""
+                    ProgressWheel:textColor="#00000000"
+                    ProgressWheel:textSize="0dp"
+                    ProgressWheel:rimColor="#00000000"
+                    ProgressWheel:barLength="60dp"
+                    ProgressWheel:barColor="#FF000000"
+                    ProgressWheel:barWidth="10dp"
+                    ProgressWheel:rimWidth="10dp"
+                    ProgressWheel:barAlpha="64"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/hrLayout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/no_value"
+                        android:layout_marginTop="10dp"
+                        android:textSize="62dp"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/heartRateText"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/bpm"
+                        android:textSize="32dp"
+                        android:layout_toRightOf="@id/heartRateText"
+                        android:layout_alignBottom="@id/heartRateText"
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/bpmText"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/chart"
+                    android:orientation="vertical"
+                    android:layout_width="245dp"
+                    android:layout_height="138dp"
+                    android:layout_below="@+id/hrLayout"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp">
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/heartImage"
+                    android:layout_below="@+id/hrLayout"
+                    android:layout_marginRight="43dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/heart"
+                    />
+
+                <ImageView
+                    android:id="@+id/batteryLevelImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/battery_0_dark"
+                    android:layout_below="@+id/heartImage"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:visibility="invisible"
+                    android:layout_marginTop="65dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:layout_below="@+id/batteryLevelImage"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="38dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="12dp"
+                    android:id="@+id/timeText"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/no_value"
+                    android:layout_marginTop="0dp"
+                    android:textSize="20dp"
+                    android:layout_below="@id/chart"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/zoneText"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status_disconnected"
+                    android:id="@+id/statusText"
+                    android:textSize="16dp"
+                    android:layout_below="@id/zoneText"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="10dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:id="@+id/powerButton"
+            android:enabled="false"
+            android:background="@android:color/transparent"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/instructionsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="332dp"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_disconnected"
+            android:id="@+id/instructionsText"
+            android:paddingLeft="5dp"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
