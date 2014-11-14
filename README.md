@@ -3,6 +3,7 @@
 Anyone can sit down, pace their breathing and think happy thoughts. HeartWave actually tells you when you are doing it right.
 HeartWave is a biofeedback app that monitors in real time your heart rate variability in order to assess and control your stress levels.
 
+![alt tag](img/white-screenshot.png)
 
 # How it works
 
